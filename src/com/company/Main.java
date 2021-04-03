@@ -6,7 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         //ej1();
-        ej2();
+        //ej2();
+        //ej3();
+        //ej4();
     }
 
     public static void ej1(){
@@ -45,4 +47,17 @@ public class Main {
 
     }
 
+    public  static void ej3(){
+        ItemVenta nuevoItem = new ItemVenta(1,"Chocolate",3,55.50);
+        nuevoItem.showItemVenta();
+    }
+
+    public  static void ej4(){
+        BankAccount account1 = new BankAccount(1,"Franco", 15000.00);
+
+        System.out.println(account1.credit(2500.00));
+        System.out.println(account1.debit(1500.00));
+        System.out.println(account1.debit(30000.00));
+        account1.showAccount();
+    }
 }
