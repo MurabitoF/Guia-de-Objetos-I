@@ -1,5 +1,7 @@
 package com.company;
 
+import java.sql.Time;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -9,6 +11,7 @@ public class Main {
         //ej2();
         //ej3();
         //ej4();
+        ej5();
     }
 
     public static void ej1(){
@@ -59,5 +62,14 @@ public class Main {
         System.out.println(account1.debit(1500.00));
         System.out.println(account1.debit(30000.00));
         account1.showAccount();
+    }
+
+    public  static void ej5(){
+        Hora reloj = new Hora(15,32,27);
+        reloj.mostrarHora();
+        reloj.avanzarSegundo();
+        reloj.mostrarHora();
+        reloj.retrocederSegundo();
+        reloj.mostrarHora();
     }
 }
