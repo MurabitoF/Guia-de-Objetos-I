@@ -1,7 +1,5 @@
 package com.company;
 
-import java.sql.Time;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -11,7 +9,7 @@ public class Main {
         //ej2();
         //ej3();
         //ej4();
-        ej5();
+        //ej5();
     }
 
     public static void ej1(){
@@ -21,7 +19,7 @@ public class Main {
         System.out.println("Width: " + rectangle1.getWidth() + "   Height: " + rectangle1.getHeight());
         System.out.println("Area: " + rectangle1.getArea());
         System.out.println("Perimeter: " + rectangle1.getPerimeter());
-        System.out.println("");
+        System.out.println();
 
         System.out.print("Input new width: ");
         rectangle1.setWidth(scan.nextDouble());
@@ -30,7 +28,7 @@ public class Main {
 
         System.out.println("Area: " + rectangle1.getArea());
         System.out.println("Perimeter: " + rectangle1.getPerimeter());
-        System.out.println("");
+        System.out.println();
 
         Rectangle rectangle2 = new Rectangle();
         System.out.println("Width: " + rectangle2.getWidth() + "   Height: " + rectangle2.getHeight());

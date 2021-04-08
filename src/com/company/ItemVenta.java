@@ -1,11 +1,11 @@
 package com.company;
 
 public class ItemVenta {
-    int id;
-    String descripcion;
-    int cantidad;
-    double pUnitario;
-    double pTotal;
+    private int id;
+    private String descripcion;
+    private int cantidad;
+    private double pUnitario;
+    private double pTotal;
 
     public ItemVenta(int id, String descripcion, int cantidad, double pUnitario) {
         this.id = id;
@@ -13,6 +13,46 @@ public class ItemVenta {
         this.cantidad = cantidad;
         this.pUnitario = pUnitario;
         this.pTotal = getTotal();
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public void setpUnitario(double pUnitario) {
+        this.pUnitario = pUnitario;
+    }
+
+    public void setpTotal(double pTotal) {
+        this.pTotal = pTotal;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public double getpUnitario() {
+        return pUnitario;
+    }
+
+    public double getpTotal() {
+        return pTotal;
     }
 
     public double getTotal(){

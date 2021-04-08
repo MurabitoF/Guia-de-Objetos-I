@@ -1,9 +1,9 @@
 package com.company;
 
 public class Hora {
-    int hora;
-    int minutos;
-    int segundos;
+    private int hora;
+    private int minutos;
+    private int segundos;
 
     public Hora(int hora, int minutos, int segundos) {
        if(hora < 0 || hora > 23){
@@ -29,6 +29,30 @@ public class Hora {
        this.hora = 0;
        this.minutos = 0;
        this.segundos = 0;
+    }
+
+    public void setHora(int hora) {
+        this.hora = hora;
+    }
+
+    public void setMinutos(int minutos) {
+        this.minutos = minutos;
+    }
+
+    public void setSegundos(int segundos) {
+        this.segundos = segundos;
+    }
+
+    public int getHora() {
+        return hora;
+    }
+
+    public int getMinutos() {
+        return minutos;
+    }
+
+    public int getSegundos() {
+        return segundos;
     }
 
     public void mostrarHora(){
