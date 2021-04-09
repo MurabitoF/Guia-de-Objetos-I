@@ -5,14 +5,12 @@ public class ItemVenta {
     private String descripcion;
     private int cantidad;
     private double pUnitario;
-    private double pTotal;
 
     public ItemVenta(int id, String descripcion, int cantidad, double pUnitario) {
         this.id = id;
         this.descripcion = descripcion;
         this.cantidad = cantidad;
         this.pUnitario = pUnitario;
-        this.pTotal = getTotal();
     }
 
     public void setId(int id) {
@@ -31,10 +29,6 @@ public class ItemVenta {
         this.pUnitario = pUnitario;
     }
 
-    public void setpTotal(double pTotal) {
-        this.pTotal = pTotal;
-    }
-
     public int getId() {
         return id;
     }
@@ -51,16 +45,12 @@ public class ItemVenta {
         return pUnitario;
     }
 
-    public double getpTotal() {
-        return pTotal;
-    }
-
     public double getTotal(){
         return this.cantidad * this.pUnitario;
     }
 
     public void showItemVenta(){
-        String output = String.format("ItemVenta[id=%d, descripcion=%s, cantidad=%d, pUnitario=%1.2f, pTotal=%1.2f]", this.id, this.descripcion, this.cantidad, this.pUnitario, this.pTotal);
+        String output = String.format("ItemVenta[id=%d, descripcion=%s, cantidad=%d, pUnitario=%1.2f, pTotal=%1.2f]", this.id, this.descripcion, this.cantidad, this.pUnitario, this.getTotal());
         System.out.println(output);
     }
 }

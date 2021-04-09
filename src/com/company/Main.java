@@ -44,7 +44,7 @@ public class Main {
         employee2.showEmployee();
 
         employee1.increaseSalary(15);
-        System.out.println(employee1.getAnnualSalary());
+        System.out.println(String.format("%1.2f", employee1.getAnnualSalary()));
 
     }
 
